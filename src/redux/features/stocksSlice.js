@@ -12,7 +12,7 @@ const stocksSlice = createSlice({
 
   initialState: {
     stocksData: [],
-    isLoading: false,
+    status: 'idle',
   },
 
   reducers: {},
@@ -20,19 +20,19 @@ const stocksSlice = createSlice({
   extraReducers: {
     [fetchStocksData.pending]: (state) => ({
       ...state,
-      isLoading: true,
+      status: 'loading',
     }),
 
     [fetchStocksData.fulfilled]: (state, action) => {
       console.log(action.payload);
       return {
         ...state,
-        isLoading: false,
+        status: 'complete',
         stocksData: stocksEffectCleanData(action),
       };
     },
 
-    [fetchStocksData.rejected]: (state) => ({ ...state, isLoading: false }),
+    [fetchStocksData.rejected]: (state) => ({ ...state, status: 'failed' }),
   },
 });
 

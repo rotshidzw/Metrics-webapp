@@ -5,7 +5,7 @@ const companyInfoEffectCleanData = ({ payload }) => payload.map((company) => ({
   address: company.address,
   zip: company.zip,
   marketCap: company.mktCap,
-  ticker: company.symbol,
+  symbol: company.symbol,
   currency: company.currency,
   StockPrice: company.price,
   changes: company.changes,
