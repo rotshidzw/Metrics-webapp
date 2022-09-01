@@ -2,23 +2,35 @@ import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
+import ArrowCircleRight from '../icons/ArrowCircleRight';
+
+import styles from '../styles/StockItem.module.css';
+
 const StockItem = ({ stocks }) => {
   const {
     companyName, symbol, changes, stockPrice,
   } = stocks;
 
   return (
-    <Link to={`/details/${symbol}`}>
-      <div>
-        <h1>{companyName}</h1>
-        <span>{symbol}</span>
-        <span>{changes.toFixed(2)}</span>
-      </div>
-      <div>
-        <span>USD</span>
-        <span>{parseFloat(stockPrice).toFixed(2)}</span>
-      </div>
-    </Link>
+    <div className={styles['stock-item']}>
+      <Link to={`/details/${symbol}`} className={styles['stock-item__link']}>
+        <div className={styles['stock-item__header']}>
+          <h1>{companyName}</h1>
+          <div>
+            {symbol}
+            {' '}
+            -
+            {'   '}
+            <span className={styles.green}>{`( ${changes.toFixed(2)} )`}</span>
+          </div>
+          <ArrowCircleRight />
+        </div>
+        <div className={styles['stock-item__footer']}>
+          <span>USD</span>
+          <span>{parseFloat(stockPrice).toFixed(2)}</span>
+        </div>
+      </Link>
+    </div>
   );
 };
 

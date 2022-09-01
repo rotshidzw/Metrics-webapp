@@ -23,14 +23,11 @@ const stocksSlice = createSlice({
       status: 'loading',
     }),
 
-    [fetchStocksData.fulfilled]: (state, action) => {
-      console.log(action.payload);
-      return {
-        ...state,
-        status: 'complete',
-        stocksData: stocksEffectCleanData(action),
-      };
-    },
+    [fetchStocksData.fulfilled]: (state, action) => ({
+      ...state,
+      status: 'complete',
+      stocksData: stocksEffectCleanData(action),
+    }),
 
     [fetchStocksData.rejected]: (state) => ({ ...state, status: 'failed' }),
   },

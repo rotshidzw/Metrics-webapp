@@ -1,11 +1,9 @@
 import axios from 'axios';
 
 const getAllcomanyInfoData = async (ticker) => {
-  console.log('ticker', ticker);
-  const companyInfoUrl = `https://financialmodelingprep.com/api/v3/profile/${ticker}?apikey=cfb96111e5b3134b48b788d8f8bdb079`;
+  const companyInfoUrl = `https://financialmodelingprep.com/api/v3/profile/${ticker}?apikey=1e8817c7ca78a54d05c70f6c71be0907`;
   try {
     const response = await axios(companyInfoUrl);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     return error;
