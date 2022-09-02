@@ -1,6 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # metrics webapp
+![image](https://user-images.githubusercontent.com/69056906/188230686-4e2f81e1-fadc-4669-930c-4459ea060824.png)
+![image](https://user-images.githubusercontent.com/69056906/188230735-f440d5d8-e9de-49f4-9733-666f84f0f898.png)
+
 
 the trading app that displays data  with  the active trading stock
  provides one of the most accurate data available on the market.
@@ -22,7 +25,11 @@ the trading app that displays data  with  the active trading stock
 
 documentary:
 
-[documentary](https://www.loom.com/share/6651e29f35464e63a4e31b4c15fd7fbb)
+(https://www.loom.com/share/6651e29f35464e63a4e31b4c15fd7fbb)
+
+
+![image](https://user-images.githubusercontent.com/69056906/188230616-6ebffce6-ceb1-4481-81bb-40dd3c2367ce.png)
+
 
 
 ## Getting Started
