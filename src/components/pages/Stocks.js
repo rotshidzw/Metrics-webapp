@@ -18,6 +18,7 @@ const Stocks = () => {
     if (status === 'idle') {
       dispatch(fetchStocksData());
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [searchTerm, setSearchTerm] = useState('');

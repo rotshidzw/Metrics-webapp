@@ -18,6 +18,7 @@ const Company = () => {
 
   useEffect(() => {
     dispatch(fetchCompanyInfoData(ticker));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
