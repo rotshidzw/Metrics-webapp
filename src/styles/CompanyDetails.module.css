@@ -3,7 +3,7 @@
   color: #fff;
 }
 
-.btn-back {
+.button-back {
   width: 5vw;
   height: 5vw;
   border: 2.5vw solid;
@@ -15,19 +15,19 @@
   position: absolute;
 }
 
-.company-info-body {
+.company-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.company-logo {
+.comp-logo {
   text-align: center;
   margin: 1rem;
 }
 
-.list-container {
+.list-cont {
   border: 5px solid black;
   border-radius: 10px;
 }

@@ -22,15 +22,15 @@ const CompanyDetails = ({ companyData }) => {
   return (
     <div className={styles.container}>
       <Link to="/">
-        <button type="button" className={styles['btn-back']}>
+        <button type="button" className={styles['button-back']}>
           Back Home
         </button>
       </Link>
-      <div className={styles['company-info-body']}>
-        <div className={styles['company-logo']}>
-          <img src={image} alt="company-logo" />
+      <div className={styles['company-body']}>
+        <div className={styles['comp-logo']}>
+          <img src={image} alt="comp-logo" />
         </div>
-        <div className={styles['list-container']}>
+        <div className={styles['list-cont']}>
           <ul className={styles['list-info']}>
             <li>{companyName}</li>
             <li>{symbol}</li>

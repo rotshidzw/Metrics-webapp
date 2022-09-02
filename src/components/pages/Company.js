@@ -29,7 +29,7 @@ const Company = () => {
   }
 
   return (
-    <div className={styles['company-container']}>
+    <div className={styles['cont-comp']}>
       {companyInfoData.map((company) => (
         <CompanyDetails key={uuidv4} companyData={company} />
       ))}
