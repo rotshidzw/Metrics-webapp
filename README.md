@@ -20,6 +20,11 @@ the trading app that displays data  with  the active trading stock
 [Live Demo Link](https://metric-webapp.netlify.app/)
 
 
+documentary:
+
+[documentary](https://www.loom.com/share/6651e29f35464e63a4e31b4c15fd7fbb)
+
+
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
