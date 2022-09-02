@@ -2,7 +2,9 @@
 
 # metrics webapp
 
-the trading app that displays data  with  the active trading stocks
+the trading app that displays data  with  the active trading stock
+ provides one of the most accurate data available on the market.
+  Data is coming right from SEC filings after being serialized by https://site.financialmodelingprep.com/developer.
 
 
 ## Built With
