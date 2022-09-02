@@ -17,7 +17,7 @@ the trading app that displays data  with  the active trading stock
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://soft-manatee-de6b42.netlify.app/)
 
 
 ## Getting Started
