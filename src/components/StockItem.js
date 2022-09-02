@@ -12,7 +12,7 @@ const StockItem = ({ stocks }) => {
   } = stocks;
 
   return (
-    <div className={styles['stock-item']}>
+    <div data-testid="companyItem" className={styles['stock-item']}>
       <Link to={`/details/${symbol}`} className={styles['stock-link']}>
         <div className={styles['stock-header']}>
           <h1>{companyName}</h1>
@@ -21,13 +21,13 @@ const StockItem = ({ stocks }) => {
             {' '}
             -
             {'   '}
-            <span className={styles.green}>{`( ${changes.toFixed(2)} )`}</span>
+            <span className={styles.green}>{`( ${changes} )`}</span>
           </div>
           <ArrowCircleRight />
         </div>
         <div className={styles['stock-footer']}>
           <span>USD</span>
-          <span>{parseFloat(stockPrice).toFixed(2)}</span>
+          <span>{parseFloat(stockPrice)}</span>
         </div>
       </Link>
     </div>

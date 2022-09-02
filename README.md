@@ -1,15 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# metrics webapp
 
-> Description the project.
+the trading app that displays data  with  the active trading stocks
 
 
 ## Built With
+- React
+- Redux
+- Jest
+- JavaScript (ES6+)
+- CSS
 
-- Major languages
-- Frameworks
-- Technologies used
 
 ## Live Demo (if available)
 
@@ -25,32 +27,26 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- Node.js
+- npm
 ### Setup
-
+git clone <repo link>
 ### Install
+more on readme-react.md
 
-### Usage
 
-### Run tests
 
-### Deployment
+
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **mavhungu rotshidzwa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rotshidzw](https://github.com/rotshidzw)
+- Twitter: [@rotshidzwamavh1](https://twitter.com/rotshidzwamavh1)
+- LinkedIn: [rotshidzwa mavhungu](https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 
@@ -63,7 +59,7 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Original design idea by <a src='https://www.behance.net/sakwadesignstudio'>Nelson Sakwa</a>
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
