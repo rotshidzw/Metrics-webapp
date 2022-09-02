@@ -1,19 +1,35 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# metrics webapp
+![image](https://user-images.githubusercontent.com/69056906/188230686-4e2f81e1-fadc-4669-930c-4459ea060824.png)
+![image](https://user-images.githubusercontent.com/69056906/188230735-f440d5d8-e9de-49f4-9733-666f84f0f898.png)
 
-> Description the project.
+
+the trading app that displays data  with  the active trading stock
+ provides one of the most accurate data available on the market.
+  Data is coming right from SEC filings after being serialized by https://site.financialmodelingprep.com/developer.
 
 
 ## Built With
+- React
+- Redux
+- Jest
+- JavaScript (ES6+)
+- CSS
 
-- Major languages
-- Frameworks
-- Technologies used
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://metricss-webapp.netlify.app/)
+
+
+documentary:
+
+(https://www.loom.com/share/6651e29f35464e63a4e31b4c15fd7fbb)
+
+
+![image](https://user-images.githubusercontent.com/69056906/188230616-6ebffce6-ceb1-4481-81bb-40dd3c2367ce.png)
+
 
 
 ## Getting Started
@@ -25,32 +41,26 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- Node.js
+- npm
 ### Setup
-
+git clone <repo link>
 ### Install
+more on readme-react.md
 
-### Usage
 
-### Run tests
 
-### Deployment
+
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **mavhungu rotshidzwa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rotshidzw](https://github.com/rotshidzw)
+- Twitter: [@rotshidzwamavh1](https://twitter.com/rotshidzwamavh1)
+- LinkedIn: [rotshidzwa mavhungu](https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 
@@ -63,7 +73,7 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Original design idea by <a src='https://www.behance.net/sakwadesignstudio'>Nelson Sakwa</a>
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
