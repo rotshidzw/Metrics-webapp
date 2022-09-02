@@ -1,52 +1,8 @@
 .container {
-  padding: 3rem;
-  background-color: #4369b0;
+  padding: 2rem;
+  color: #fff;
 }
 
-/*
-.button-back {
-  width: 5vw;
-  height: 5vw;
-  border: 2.5vw solid;
-  border-color: black transparent transparent black;
-  transform: rotate(-45deg);
-  padding: 0.8rem;
-  color: #2d4573;
-  align-self: flex-end;
-  position: absolute;
-} */
-
-.company-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.comp-logo {
-  text-align: center;
-  margin: 1rem;
-}
-
-.list-cont {
-  border: 5px solid black;
-  border-radius: 10px;
-}
-
-.list-info {
-  padding: 1rem;
-}
-
-.list-info li {
-  background-color: #3e5e99;
-  margin: 0.5rem;
-  border-radius: 5px;
-  padding: 0.6rem;
-}
-
-.list-info li:nth-child(odd) {
-  background-color: #2d4573;
-}
 
 .button-back {
   padding: 0.6em 2em;
@@ -116,4 +72,37 @@
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+
+.company-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  margin: 1rem;
+}
+
+.list-container {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.list-info {
+  padding: 1rem;
+}
+
+.list-info li {
+  background-color: #3e5e99;
+  margin: 0.5rem;
+  border-radius: 5px;
+  padding: 0.6rem;
+}
+
+.list-info li:nth-child(odd) {
+  background-color: #2d4573;
 }

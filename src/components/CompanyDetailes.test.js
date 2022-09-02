@@ -8,7 +8,7 @@ const MockedCompanyDetails = () => (
   </BrowserRouter>
 );
 
-describe('CompnayDetails', () => {
+describe('CompanyDetails', () => {
   test('test if the company details info rendered', async () => {
     render(<MockedCompanyDetails />);
     const companyName = screen.getByTestId(/companyName/i);

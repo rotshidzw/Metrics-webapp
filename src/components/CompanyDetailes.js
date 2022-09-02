@@ -26,10 +26,10 @@ const CompanyDetails = ({ companyData }) => {
         </button>
       </Link>
       <div className={styles['company-body']}>
-        <div className={styles['comp-logo']}>
-          <img src={image} alt="comp-logo" />
+        <div className={styles['logo']}>
+          <img src={image} alt="company-logo" />
         </div>
-        <div className={styles['list-cont']}>
+        <div className={styles['list-container']}>
           <ul className={styles['list-info']}>
             <li data-testid="companyName">{companyName}</li>
             <li>{symbol}</li>

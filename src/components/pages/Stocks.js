@@ -33,8 +33,8 @@ const Stocks = () => {
   return (
     <>
       <Header />
-      <div className={styles['main-cont']}>
-        <div className={styles['search-input-cont']}>
+      <div className={styles['main-container']}>
+        <div className={styles['search-container']}>
           <input
             className={styles['search-input']}
             type="text"
@@ -42,7 +42,7 @@ const Stocks = () => {
             placeholder="Search by company name"
           />
         </div>
-        <div className={styles['stock-cont']}>
+        <div className={styles['stocks-container']}>
           {filteredStocks.map((stock) => (
             <StockItem key={uuidv4()} stocks={stock} />
           ))}

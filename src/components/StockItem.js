@@ -13,8 +13,8 @@ const StockItem = ({ stocks }) => {
 
   return (
     <div data-testid="companyItem" className={styles['stock-item']}>
-      <Link to={`/details/${symbol}`} className={styles['stock-link']}>
-        <div className={styles['stock-header']}>
+      <Link to={`/details/${symbol}`} className={styles['stock-item__link']}>
+        <div className={styles['stock-item__header']}>
           <h1>{companyName}</h1>
           <div>
             {symbol}
@@ -25,7 +25,7 @@ const StockItem = ({ stocks }) => {
           </div>
           <ArrowCircleRight />
         </div>
-        <div className={styles['stock-footer']}>
+        <div className={styles['stock-item__footer']}>
           <span>USD</span>
           <span>{parseFloat(stockPrice)}</span>
         </div>

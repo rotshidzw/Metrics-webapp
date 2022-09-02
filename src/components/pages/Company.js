@@ -20,17 +20,16 @@ const Company = () => {
     dispatch(fetchCompanyInfoData(ticker));
   }, []);
 
+  return (
     <div
       data-testid="company-container"
       className={styles['company-container']}
-    />;
-    return (
-      <div className={styles['cont-comp']}>
-        {companyInfoData.map((company) => (
-          <CompanyDetails key={uuidv4} companyData={company} />
-        ))}
-      </div>
-    );
+    >
+      {companyInfoData.map((company) => (
+        <CompanyDetails key={uuidv4} companyData={company} />
+      ))}
+    </div>
+  );
 };
 
 export default Company;

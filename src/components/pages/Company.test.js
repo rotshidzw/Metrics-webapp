@@ -12,7 +12,7 @@ const MockedCompany = () => (
   </BrowserRouter>
 );
 
-describe('Compnay component', () => {
+describe('Company component', () => {
   test('test if the header company component rendered', async () => {
     render(<MockedCompany />);
     const companyContainer = await screen.findByTestId(/company-container/i);
