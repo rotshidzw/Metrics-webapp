@@ -1,4 +1,4 @@
-.main-cont {
+.main-container {
   background-color: #4369b0;
   padding: 4rem;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.search-input-cont {
+.search-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   font-size: 1.2rem;
 }
 
-.stock-cont {
+.stocks-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -43,7 +43,7 @@
     font-size: 0.8rem;
   }
 
-  .stock-cont {
+  .stocks-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }

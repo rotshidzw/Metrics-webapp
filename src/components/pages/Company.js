@@ -10,7 +10,7 @@ import CompanyDetails from '../CompanyDetailes';
 import styles from '../../styles/Company.module.css';
 
 const Company = () => {
-  const { companyInfoData, status } = useSelector((state) => state.companyInfo);
+  const { companyInfoData } = useSelector((state) => state.companyInfo);
 
   const dispatch = useDispatch();
 
@@ -18,18 +18,14 @@ const Company = () => {
 
   useEffect(() => {
     dispatch(fetchCompanyInfoData(ticker));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (status === 'loading') {
-    return <p>loading</p>;
-  }
-
-  if (status === 'failed') {
-    return <p>failed</p>;
-  }
-
   return (
-    <div className={styles['cont-comp']}>
+    <div
+      data-testid="company-container"
+      className={styles['company-container']}
+    >
       {companyInfoData.map((company) => (
         <CompanyDetails key={uuidv4} companyData={company} />
       ))}

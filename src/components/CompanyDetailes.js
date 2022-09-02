@@ -10,7 +10,6 @@ const CompanyDetails = ({ companyData }) => {
     companyName,
     symbol,
     StockPrice,
-    marketCap,
     ceo,
     website,
     description,
@@ -27,20 +26,19 @@ const CompanyDetails = ({ companyData }) => {
         </button>
       </Link>
       <div className={styles['company-body']}>
-        <div className={styles['comp-logo']}>
-          <img src={image} alt="comp-logo" />
+        <div className={styles.logo}>
+          <img src={image} alt="company-logo" />
         </div>
-        <div className={styles['list-cont']}>
+        <div className={styles['list-container']}>
           <ul className={styles['list-info']}>
-            <li>{companyName}</li>
+            <li data-testid="companyName">{companyName}</li>
             <li>{symbol}</li>
             <li>{StockPrice}</li>
-            <li>{marketCap}</li>
             <li>{ceo}</li>
             <li>{website}</li>
             <li>{description}</li>
             <li>{address}</li>
-            <li>{changes.toFixed(2)}</li>
+            <li>{changes}</li>
             <li>{currency}</li>
           </ul>
         </div>

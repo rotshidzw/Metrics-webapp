@@ -4,15 +4,73 @@
 }
 
 .button-back {
-  width: 5vw;
-  height: 5vw;
-  border: 2.5vw solid;
-  border-color: black transparent transparent black;
-  transform: rotate(-45deg);
-  padding: 0.8rem;
-  color: #2d4573;
-  align-self: flex-end;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-back::before {
+  content: "";
+  background:
+    linear-gradient(
+      45deg,
+      #f00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #f00
+    );
   position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-back::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 .company-body {
@@ -22,12 +80,12 @@
   justify-content: center;
 }
 
-.comp-logo {
+.logo {
   text-align: center;
   margin: 1rem;
 }
 
-.list-cont {
+.list-container {
   border: 5px solid black;
   border-radius: 10px;
 }
