@@ -11,18 +11,18 @@
   background-color: #2d4573;
 }
 
-.stock-item__header {
+.stock-header {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 90%;
 }
 
-.stock-item__header h1 {
+.stock-header h1 {
   margin-right: 10px;
 }
 
-.stock-item__footer {
+.stock-footer {
   display: flex;
   flex-direction: column;
   gap: 5px;

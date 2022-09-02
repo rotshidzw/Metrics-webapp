@@ -26,7 +26,7 @@ const CompanyDetails = ({ companyData }) => {
         </button>
       </Link>
       <div className={styles['company-body']}>
-        <div className={styles['logo']}>
+        <div className={styles.logo}>
           <img src={image} alt="company-logo" />
         </div>
         <div className={styles['list-container']}>
