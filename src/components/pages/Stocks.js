@@ -6,10 +6,12 @@ import { v4 as uuidv4 } from 'uuid';
 import { fetchStocksData } from '../../redux/features/stocksSlice';
 import StockItem from '../StockItem';
 
+import styles from '../../styles/Stocks.module.css';
+import Header from '../Header';
+
 const Stocks = () => {
   const { stocksData, status } = useSelector((state) => state.stocks);
 
-  // console.log(status === 'idle');
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,20 +31,24 @@ const Stocks = () => {
     : stocksData.filter((stock) => stock.companyName.toLowerCase().includes(searchTerm));
 
   return (
-    <div>
-      <div>
-        <input
-          type="text"
-          onChange={onSearchStockHandler}
-          placeholder="search by company name"
-        />
+    <>
+      <Header />
+      <div className={styles['main-cont']}>
+        <div className={styles['search-input-cont']}>
+          <input
+            className={styles['search-input']}
+            type="text"
+            onChange={onSearchStockHandler}
+            placeholder="Search by company name"
+          />
+        </div>
+        <div className={styles['stock-cont']}>
+          {filteredStocks.map((stock) => (
+            <StockItem key={uuidv4()} stocks={stock} />
+          ))}
+        </div>
       </div>
-      <div>
-        {filteredStocks.map((stock) => (
-          <StockItem key={uuidv4()} stocks={stock} />
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 

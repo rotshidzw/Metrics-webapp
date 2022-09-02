@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
+import styles from '../styles/CompanyDetails.module.css';
+
 const CompanyDetails = ({ companyData }) => {
   const {
     image,
@@ -18,16 +20,18 @@ const CompanyDetails = ({ companyData }) => {
   } = companyData;
 
   return (
-    <div>
+    <div className={styles.container}>
       <Link to="/">
-        <button type="button">Back Home</button>
+        <button type="button" className={styles['button-back']}>
+          Back Home
+        </button>
       </Link>
-      <div>
-        <div>
-          <img src={image} alt="company-logo" />
+      <div className={styles['company-body']}>
+        <div className={styles['comp-logo']}>
+          <img src={image} alt="comp-logo" />
         </div>
-        <div>
-          <ul>
+        <div className={styles['list-cont']}>
+          <ul className={styles['list-info']}>
             <li>{companyName}</li>
             <li>{symbol}</li>
             <li>{StockPrice}</li>
